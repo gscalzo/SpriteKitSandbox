@@ -38,6 +38,20 @@
                             position:CGPointMake(CGRectGetMidX(self.frame),
                                                  BTN_HEIGHT)
       ]];
+    [self createSceneContents];
+}
+
+- (void) createSceneContents
+{
+    self.backgroundColor = [SKColor blackColor];
+    SKSpriteNode *sn = [SKSpriteNode spriteNodeWithImageNamed:@"space_bg"];
+    
+    sn.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
+    sn.name = @"BACKGROUND";
+    
+    [self addChild:sn];
+    self.scaleMode = SKSceneScaleModeAspectFit;
+    self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
 }
 
 @end
