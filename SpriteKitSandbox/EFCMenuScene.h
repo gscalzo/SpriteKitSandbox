@@ -8,6 +8,6 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface EFCMyScene : SKScene
+@interface EFCMenuScene : SKScene
 
 @end

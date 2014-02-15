@@ -16,7 +16,7 @@
 		EEF648ED18AFCAFE0009FD8F /* EFCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF648EC18AFCAFE0009FD8F /* EFCAppDelegate.m */; };
 		EEF648F018AFCAFE0009FD8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEF648EE18AFCAFE0009FD8F /* Main.storyboard */; };
 		EEF648F318AFCAFE0009FD8F /* EFCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF648F218AFCAFE0009FD8F /* EFCViewController.m */; };
-		EEF648F618AFCAFE0009FD8F /* EFCMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF648F518AFCAFE0009FD8F /* EFCMyScene.m */; };
+		EEF648F618AFCAFE0009FD8F /* EFCMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF648F518AFCAFE0009FD8F /* EFCMenuScene.m */; };
 		EEF648F818AFCAFE0009FD8F /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = EEF648F718AFCAFE0009FD8F /* Spaceship.png */; };
 		EEF648FA18AFCAFE0009FD8F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEF648F918AFCAFE0009FD8F /* Images.xcassets */; };
 		EEF6490118AFCAFE0009FD8F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF6490018AFCAFE0009FD8F /* XCTest.framework */; };
@@ -24,6 +24,8 @@
 		EEF6490318AFCAFE0009FD8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF648DE18AFCAFE0009FD8F /* UIKit.framework */; };
 		EEF6490B18AFCAFE0009FD8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEF6490918AFCAFE0009FD8F /* InfoPlist.strings */; };
 		EEF6490D18AFCAFE0009FD8F /* SpriteKitSandboxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF6490C18AFCAFE0009FD8F /* SpriteKitSandboxTests.m */; };
+		EEF6491918AFD29D0009FD8F /* EFCCarScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF6491818AFD29D0009FD8F /* EFCCarScene.m */; };
+		F0959D4D28334345B94A1B49 /* libPods-SpriteKitSandbox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47CCEAF577994BD7A85A2681 /* libPods-SpriteKitSandbox.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		47CCEAF577994BD7A85A2681 /* libPods-SpriteKitSandbox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SpriteKitSandbox.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E882CD7119E540B9B2B9FAF2 /* Pods-SpriteKitSandbox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitSandbox.xcconfig"; path = "Pods/Pods-SpriteKitSandbox.xcconfig"; sourceTree = "<group>"; };
 		EEF648D718AFCAFE0009FD8F /* SpriteKitSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteKitSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF648DA18AFCAFE0009FD8F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EEF648DC18AFCAFE0009FD8F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -51,8 +55,8 @@
 		EEF648EF18AFCAFE0009FD8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEF648F118AFCAFE0009FD8F /* EFCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFCViewController.h; sourceTree = "<group>"; };
 		EEF648F218AFCAFE0009FD8F /* EFCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFCViewController.m; sourceTree = "<group>"; };
-		EEF648F418AFCAFE0009FD8F /* EFCMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFCMyScene.h; sourceTree = "<group>"; };
-		EEF648F518AFCAFE0009FD8F /* EFCMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFCMyScene.m; sourceTree = "<group>"; };
+		EEF648F418AFCAFE0009FD8F /* EFCMenuScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFCMenuScene.h; sourceTree = "<group>"; };
+		EEF648F518AFCAFE0009FD8F /* EFCMenuScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFCMenuScene.m; sourceTree = "<group>"; };
 		EEF648F718AFCAFE0009FD8F /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		EEF648F918AFCAFE0009FD8F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EEF648FF18AFCAFE0009FD8F /* SpriteKitSandboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpriteKitSandboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +64,8 @@
 		EEF6490818AFCAFE0009FD8F /* SpriteKitSandboxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpriteKitSandboxTests-Info.plist"; sourceTree = "<group>"; };
 		EEF6490A18AFCAFE0009FD8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EEF6490C18AFCAFE0009FD8F /* SpriteKitSandboxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteKitSandboxTests.m; sourceTree = "<group>"; };
+		EEF6491718AFD29D0009FD8F /* EFCCarScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCCarScene.h; sourceTree = "<group>"; };
+		EEF6491818AFD29D0009FD8F /* EFCCarScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCCarScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,7 @@
 				EEF648DF18AFCAFE0009FD8F /* UIKit.framework in Frameworks */,
 				EEF648E118AFCAFE0009FD8F /* SpriteKit.framework in Frameworks */,
 				EEF648DB18AFCAFE0009FD8F /* Foundation.framework in Frameworks */,
+				F0959D4D28334345B94A1B49 /* libPods-SpriteKitSandbox.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +101,7 @@
 				EEF6490618AFCAFE0009FD8F /* SpriteKitSandboxTests */,
 				EEF648D918AFCAFE0009FD8F /* Frameworks */,
 				EEF648D818AFCAFE0009FD8F /* Products */,
+				E882CD7119E540B9B2B9FAF2 /* Pods-SpriteKitSandbox.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +122,7 @@
 				EEF648DE18AFCAFE0009FD8F /* UIKit.framework */,
 				EEF648E018AFCAFE0009FD8F /* SpriteKit.framework */,
 				EEF6490018AFCAFE0009FD8F /* XCTest.framework */,
+				47CCEAF577994BD7A85A2681 /* libPods-SpriteKitSandbox.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,13 +130,14 @@
 		EEF648E218AFCAFE0009FD8F /* SpriteKitSandbox */ = {
 			isa = PBXGroup;
 			children = (
+				EEF6491618AFD27D0009FD8F /* Scene */,
 				EEF648EB18AFCAFE0009FD8F /* EFCAppDelegate.h */,
 				EEF648EC18AFCAFE0009FD8F /* EFCAppDelegate.m */,
 				EEF648EE18AFCAFE0009FD8F /* Main.storyboard */,
 				EEF648F118AFCAFE0009FD8F /* EFCViewController.h */,
 				EEF648F218AFCAFE0009FD8F /* EFCViewController.m */,
-				EEF648F418AFCAFE0009FD8F /* EFCMyScene.h */,
-				EEF648F518AFCAFE0009FD8F /* EFCMyScene.m */,
+				EEF648F418AFCAFE0009FD8F /* EFCMenuScene.h */,
+				EEF648F518AFCAFE0009FD8F /* EFCMenuScene.m */,
 				EEF648F718AFCAFE0009FD8F /* Spaceship.png */,
 				EEF648F918AFCAFE0009FD8F /* Images.xcassets */,
 				EEF648E318AFCAFE0009FD8F /* Supporting Files */,
@@ -164,6 +174,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EEF6491618AFD27D0009FD8F /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				EEF6491718AFD29D0009FD8F /* EFCCarScene.h */,
+				EEF6491818AFD29D0009FD8F /* EFCCarScene.m */,
+			);
+			name = Scene;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -171,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EEF6491018AFCAFE0009FD8F /* Build configuration list for PBXNativeTarget "SpriteKitSandbox" */;
 			buildPhases = (
+				501F2BABF9694C85A688FB54 /* Check Pods Manifest.lock */,
 				EEF648D318AFCAFE0009FD8F /* Sources */,
 				EEF648D418AFCAFE0009FD8F /* Frameworks */,
 				EEF648D518AFCAFE0009FD8F /* Resources */,
+				FA6BBD5D817C4A2989763FD7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -258,15 +279,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		501F2BABF9694C85A688FB54 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FA6BBD5D817C4A2989763FD7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-SpriteKitSandbox-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EEF648D318AFCAFE0009FD8F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EEF648F318AFCAFE0009FD8F /* EFCViewController.m in Sources */,
-				EEF648F618AFCAFE0009FD8F /* EFCMyScene.m in Sources */,
+				EEF648F618AFCAFE0009FD8F /* EFCMenuScene.m in Sources */,
 				EEF648E918AFCAFE0009FD8F /* main.m in Sources */,
 				EEF648ED18AFCAFE0009FD8F /* EFCAppDelegate.m in Sources */,
+				EEF6491918AFD29D0009FD8F /* EFCCarScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +445,7 @@
 		};
 		EEF6491118AFCAFE0009FD8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E882CD7119E540B9B2B9FAF2 /* Pods-SpriteKitSandbox.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -404,6 +460,7 @@
 		};
 		EEF6491218AFCAFE0009FD8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E882CD7119E540B9B2B9FAF2 /* Pods-SpriteKitSandbox.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -477,6 +534,7 @@
 				EEF6491218AFCAFE0009FD8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EEF6491318AFCAFE0009FD8F /* Build configuration list for PBXNativeTarget "SpriteKitSandboxTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +543,7 @@
 				EEF6491518AFCAFE0009FD8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,13 +7,13 @@
 //
 
 #import "EFCViewController.h"
-#import "EFCMyScene.h"
+#import "EFCMenuScene.h"
 
 @implementation EFCViewController
 
-- (void)viewDidLoad
+- (void)viewWillLayoutSubviews
 {
-    [super viewDidLoad];
+    [super viewWillLayoutSubviews];
 
     // Configure the view.
     SKView * skView = (SKView *)self.view;
@@ -21,7 +21,7 @@
     skView.showsNodeCount = YES;
     
     // Create and configure the scene.
-    SKScene * scene = [EFCMyScene sceneWithSize:skView.bounds.size];
+    SKScene * scene = [EFCMenuScene sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     
     // Present the scene.
