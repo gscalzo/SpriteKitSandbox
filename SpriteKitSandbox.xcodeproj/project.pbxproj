@@ -17,7 +17,6 @@
 		EEF648F018AFCAFE0009FD8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEF648EE18AFCAFE0009FD8F /* Main.storyboard */; };
 		EEF648F318AFCAFE0009FD8F /* EFCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF648F218AFCAFE0009FD8F /* EFCViewController.m */; };
 		EEF648F618AFCAFE0009FD8F /* EFCMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF648F518AFCAFE0009FD8F /* EFCMenuScene.m */; };
-		EEF648F818AFCAFE0009FD8F /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = EEF648F718AFCAFE0009FD8F /* Spaceship.png */; };
 		EEF648FA18AFCAFE0009FD8F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEF648F918AFCAFE0009FD8F /* Images.xcassets */; };
 		EEF6490118AFCAFE0009FD8F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF6490018AFCAFE0009FD8F /* XCTest.framework */; };
 		EEF6490218AFCAFE0009FD8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF648DA18AFCAFE0009FD8F /* Foundation.framework */; };
@@ -25,6 +24,7 @@
 		EEF6490B18AFCAFE0009FD8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEF6490918AFCAFE0009FD8F /* InfoPlist.strings */; };
 		EEF6490D18AFCAFE0009FD8F /* SpriteKitSandboxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF6490C18AFCAFE0009FD8F /* SpriteKitSandboxTests.m */; };
 		EEF6491918AFD29D0009FD8F /* EFCCarScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF6491818AFD29D0009FD8F /* EFCCarScene.m */; };
+		EEF6491D18AFD9590009FD8F /* SKSpriteButtonNode+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF6491C18AFD9590009FD8F /* SKSpriteButtonNode+Extra.m */; };
 		F0959D4D28334345B94A1B49 /* libPods-SpriteKitSandbox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47CCEAF577994BD7A85A2681 /* libPods-SpriteKitSandbox.a */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +57,6 @@
 		EEF648F218AFCAFE0009FD8F /* EFCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFCViewController.m; sourceTree = "<group>"; };
 		EEF648F418AFCAFE0009FD8F /* EFCMenuScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFCMenuScene.h; sourceTree = "<group>"; };
 		EEF648F518AFCAFE0009FD8F /* EFCMenuScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFCMenuScene.m; sourceTree = "<group>"; };
-		EEF648F718AFCAFE0009FD8F /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		EEF648F918AFCAFE0009FD8F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EEF648FF18AFCAFE0009FD8F /* SpriteKitSandboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpriteKitSandboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF6490018AFCAFE0009FD8F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -66,6 +65,8 @@
 		EEF6490C18AFCAFE0009FD8F /* SpriteKitSandboxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteKitSandboxTests.m; sourceTree = "<group>"; };
 		EEF6491718AFD29D0009FD8F /* EFCCarScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCCarScene.h; sourceTree = "<group>"; };
 		EEF6491818AFD29D0009FD8F /* EFCCarScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCCarScene.m; sourceTree = "<group>"; };
+		EEF6491B18AFD9590009FD8F /* SKSpriteButtonNode+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKSpriteButtonNode+Extra.h"; sourceTree = "<group>"; };
+		EEF6491C18AFD9590009FD8F /* SKSpriteButtonNode+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKSpriteButtonNode+Extra.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,15 +131,13 @@
 		EEF648E218AFCAFE0009FD8F /* SpriteKitSandbox */ = {
 			isa = PBXGroup;
 			children = (
+				EEF6491A18AFD7F50009FD8F /* Categories */,
 				EEF6491618AFD27D0009FD8F /* Scene */,
 				EEF648EB18AFCAFE0009FD8F /* EFCAppDelegate.h */,
 				EEF648EC18AFCAFE0009FD8F /* EFCAppDelegate.m */,
 				EEF648EE18AFCAFE0009FD8F /* Main.storyboard */,
 				EEF648F118AFCAFE0009FD8F /* EFCViewController.h */,
 				EEF648F218AFCAFE0009FD8F /* EFCViewController.m */,
-				EEF648F418AFCAFE0009FD8F /* EFCMenuScene.h */,
-				EEF648F518AFCAFE0009FD8F /* EFCMenuScene.m */,
-				EEF648F718AFCAFE0009FD8F /* Spaceship.png */,
 				EEF648F918AFCAFE0009FD8F /* Images.xcassets */,
 				EEF648E318AFCAFE0009FD8F /* Supporting Files */,
 			);
@@ -177,10 +176,21 @@
 		EEF6491618AFD27D0009FD8F /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				EEF648F418AFCAFE0009FD8F /* EFCMenuScene.h */,
+				EEF648F518AFCAFE0009FD8F /* EFCMenuScene.m */,
 				EEF6491718AFD29D0009FD8F /* EFCCarScene.h */,
 				EEF6491818AFD29D0009FD8F /* EFCCarScene.m */,
 			);
 			name = Scene;
+			sourceTree = "<group>";
+		};
+		EEF6491A18AFD7F50009FD8F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EEF6491B18AFD9590009FD8F /* SKSpriteButtonNode+Extra.h */,
+				EEF6491C18AFD9590009FD8F /* SKSpriteButtonNode+Extra.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +274,6 @@
 			files = (
 				EEF648E718AFCAFE0009FD8F /* InfoPlist.strings in Resources */,
 				EEF648FA18AFCAFE0009FD8F /* Images.xcassets in Resources */,
-				EEF648F818AFCAFE0009FD8F /* Spaceship.png in Resources */,
 				EEF648F018AFCAFE0009FD8F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +331,7 @@
 				EEF648E918AFCAFE0009FD8F /* main.m in Sources */,
 				EEF648ED18AFCAFE0009FD8F /* EFCAppDelegate.m in Sources */,
 				EEF6491918AFD29D0009FD8F /* EFCCarScene.m in Sources */,
+				EEF6491D18AFD9590009FD8F /* SKSpriteButtonNode+Extra.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
