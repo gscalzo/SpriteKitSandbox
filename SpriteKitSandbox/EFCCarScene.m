@@ -9,6 +9,7 @@
 #import "EFCCarScene.h"
 #import "SKSpriteButtonNode+Extra.h"
 #import "EFCMenuScene.h"
+#import "EFCVehicle.h"
 
 @implementation EFCCarScene
 
@@ -64,13 +65,21 @@
 }
 
 #pragma mark - car
-- (SKShapeNode*) makeWheel
+- (SKSpriteNode*) makeWheel
 {
-    SKShapeNode *wheel = [[SKShapeNode alloc] init];
-    CGMutablePathRef myPath = CGPathCreateMutable();
-    CGPathAddArc(myPath, NULL, 0,0, 16, 0, M_PI*2, YES);
-    wheel.path = myPath;
+    SKSpriteNode *wheel = [SKSpriteNode spriteNodeWithImageNamed:@"wheel.png"];
+//
+//    SKShapeNode *wheel = [[SKShapeNode alloc] init];
+//    CGMutablePathRef myPath = CGPathCreateMutable();
+//    CGPathAddArc(myPath, NULL, 0,0, 16, 0, M_PI*2, YES);
+//    wheel.path = myPath;
     return wheel;
+}
+
+- (void) createCar1:(CGPoint)location
+{
+    [self addChild:
+     [[EFCVehicle alloc]initWithPosition:location]];
 }
 
 - (void) createCar:(CGPoint)location
@@ -82,17 +91,17 @@
     [self addChild:carBody];
     
     // 2. wheels
-    SKShapeNode *leftWheel = [self makeWheel];
+    SKSpriteNode *leftWheel = [self makeWheel];
     leftWheel.position = CGPointMake(carBody.position.x - carBody.size.width / 2, carBody.position.y);
     leftWheel.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:16];
     [self addChild:leftWheel];
     
-    SKShapeNode *rightWheel = [self makeWheel];
+    SKSpriteNode *rightWheel = [self makeWheel];
     rightWheel.position = CGPointMake(carBody.position.x + carBody.size.width / 2, carBody.position.y);
     rightWheel.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:16];
     [self addChild:rightWheel];
     
-    SKShapeNode *centerWheel = [self makeWheel];
+    SKSpriteNode *centerWheel = [self makeWheel];
     centerWheel.position = CGPointMake(carBody.position.x , carBody.position.y);
     centerWheel.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:16];
     [self addChild:centerWheel];
@@ -100,13 +109,16 @@
     // 3. Join wheels to car
     SKPhysicsJointSpring *joinLeft = [SKPhysicsJointSpring jointWithBodyA:carBody.physicsBody bodyB:leftWheel.physicsBody anchorA:leftWheel.position anchorB:leftWheel.position];
     joinLeft.damping = .5;
+    joinLeft.frequency = .5;
     [self.physicsWorld addJoint:joinLeft];
     SKPhysicsJointSpring *joinRight = [SKPhysicsJointSpring jointWithBodyA:carBody.physicsBody bodyB:rightWheel.physicsBody anchorA:rightWheel.position anchorB:rightWheel.position];
     joinRight.damping = .5;
+    joinRight.frequency = .5;
     [self.physicsWorld addJoint:joinRight];
 
     SKPhysicsJointSpring *joinCenter = [SKPhysicsJointSpring jointWithBodyA:carBody.physicsBody bodyB:centerWheel.physicsBody anchorA:centerWheel.position anchorB:centerWheel.position];
     joinCenter.damping = .5;
+    joinCenter.frequency = .5;
     [self.physicsWorld addJoint:joinCenter];
     
     // 4. drive car
@@ -114,6 +126,8 @@
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
         [leftWheel.physicsBody applyTorque:-120];
+        [centerWheel.physicsBody applyTorque:-120];
+        [rightWheel.physicsBody applyTorque:-120];
     });
 }
 

@@ -25,6 +25,7 @@
 		EEF6490D18AFCAFE0009FD8F /* SpriteKitSandboxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF6490C18AFCAFE0009FD8F /* SpriteKitSandboxTests.m */; };
 		EEF6491918AFD29D0009FD8F /* EFCCarScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF6491818AFD29D0009FD8F /* EFCCarScene.m */; };
 		EEF6491D18AFD9590009FD8F /* SKSpriteButtonNode+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF6491C18AFD9590009FD8F /* SKSpriteButtonNode+Extra.m */; };
+		EEF6492518B174B50009FD8F /* EFCVehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF6492418B174B50009FD8F /* EFCVehicle.m */; };
 		F0959D4D28334345B94A1B49 /* libPods-SpriteKitSandbox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47CCEAF577994BD7A85A2681 /* libPods-SpriteKitSandbox.a */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,8 @@
 		EEF6491818AFD29D0009FD8F /* EFCCarScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCCarScene.m; sourceTree = "<group>"; };
 		EEF6491B18AFD9590009FD8F /* SKSpriteButtonNode+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKSpriteButtonNode+Extra.h"; sourceTree = "<group>"; };
 		EEF6491C18AFD9590009FD8F /* SKSpriteButtonNode+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKSpriteButtonNode+Extra.m"; sourceTree = "<group>"; };
+		EEF6492318B174B50009FD8F /* EFCVehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCVehicle.h; sourceTree = "<group>"; };
+		EEF6492418B174B50009FD8F /* EFCVehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCVehicle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,7 @@
 		EEF648E218AFCAFE0009FD8F /* SpriteKitSandbox */ = {
 			isa = PBXGroup;
 			children = (
+				EEF6492218B1745B0009FD8F /* Nodes */,
 				EEF6491A18AFD7F50009FD8F /* Categories */,
 				EEF6491618AFD27D0009FD8F /* Scene */,
 				EEF648EB18AFCAFE0009FD8F /* EFCAppDelegate.h */,
@@ -191,6 +195,15 @@
 				EEF6491C18AFD9590009FD8F /* SKSpriteButtonNode+Extra.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		EEF6492218B1745B0009FD8F /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				EEF6492318B174B50009FD8F /* EFCVehicle.h */,
+				EEF6492418B174B50009FD8F /* EFCVehicle.m */,
+			);
+			name = Nodes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +341,7 @@
 			files = (
 				EEF648F318AFCAFE0009FD8F /* EFCViewController.m in Sources */,
 				EEF648F618AFCAFE0009FD8F /* EFCMenuScene.m in Sources */,
+				EEF6492518B174B50009FD8F /* EFCVehicle.m in Sources */,
 				EEF648E918AFCAFE0009FD8F /* main.m in Sources */,
 				EEF648ED18AFCAFE0009FD8F /* EFCAppDelegate.m in Sources */,
 				EEF6491918AFD29D0009FD8F /* EFCCarScene.m in Sources */,
