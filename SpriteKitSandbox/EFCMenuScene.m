@@ -9,6 +9,7 @@
 #import "EFCMenuScene.h"
 #import "SKSpriteButtonNode+Extra.h"
 #import "EFCCarScene.h"
+#import "EFCParallaxScrollingScene.h"
 
 @implementation EFCMenuScene
 
@@ -46,7 +47,9 @@
     [self addChild:
      [SKSpriteButtonNode buttonTitle:@"Parallax"
                                block:^(id buttonNode){
-                                   NSLog(@"Parallax");
+                                   SKTransition *reveal = [SKTransition fadeWithDuration:.5f];
+                                   EFCParallaxScrollingScene *newScene = [[EFCParallaxScrollingScene alloc] initWithSize: self.size];
+                                   [self.scene.view presentScene: newScene transition: reveal];
                                }
                             position:CGPointMake(CGRectGetMidX(self.frame),
                                                  CGRectGetMidY(self.frame))

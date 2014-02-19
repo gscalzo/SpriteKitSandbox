@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EEA62A0A18B5157000F474FC /* PBParallaxScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA62A0918B5157000F474FC /* PBParallaxScrolling.m */; };
+		EEA62A0D18B5159D00F474FC /* EFCParallaxScrollingScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA62A0C18B5159D00F474FC /* EFCParallaxScrollingScene.m */; };
 		EEF648DB18AFCAFE0009FD8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF648DA18AFCAFE0009FD8F /* Foundation.framework */; };
 		EEF648DD18AFCAFE0009FD8F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF648DC18AFCAFE0009FD8F /* CoreGraphics.framework */; };
 		EEF648DF18AFCAFE0009FD8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF648DE18AFCAFE0009FD8F /* UIKit.framework */; };
@@ -42,6 +44,10 @@
 /* Begin PBXFileReference section */
 		47CCEAF577994BD7A85A2681 /* libPods-SpriteKitSandbox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SpriteKitSandbox.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E882CD7119E540B9B2B9FAF2 /* Pods-SpriteKitSandbox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitSandbox.xcconfig"; path = "Pods/Pods-SpriteKitSandbox.xcconfig"; sourceTree = "<group>"; };
+		EEA62A0818B5157000F474FC /* PBParallaxScrolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBParallaxScrolling.h; sourceTree = "<group>"; };
+		EEA62A0918B5157000F474FC /* PBParallaxScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBParallaxScrolling.m; sourceTree = "<group>"; };
+		EEA62A0B18B5159D00F474FC /* EFCParallaxScrollingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCParallaxScrollingScene.h; sourceTree = "<group>"; };
+		EEA62A0C18B5159D00F474FC /* EFCParallaxScrollingScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCParallaxScrollingScene.m; sourceTree = "<group>"; };
 		EEF648D718AFCAFE0009FD8F /* SpriteKitSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteKitSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF648DA18AFCAFE0009FD8F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EEF648DC18AFCAFE0009FD8F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -98,6 +104,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EEA62A0718B5155E00F474FC /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				EEA62A0818B5157000F474FC /* PBParallaxScrolling.h */,
+				EEA62A0918B5157000F474FC /* PBParallaxScrolling.m */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
 		EEF648CE18AFCAFE0009FD8F = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +149,7 @@
 		EEF648E218AFCAFE0009FD8F /* SpriteKitSandbox */ = {
 			isa = PBXGroup;
 			children = (
+				EEA62A0718B5155E00F474FC /* Lib */,
 				EEF6492218B1745B0009FD8F /* Nodes */,
 				EEF6491A18AFD7F50009FD8F /* Categories */,
 				EEF6491618AFD27D0009FD8F /* Scene */,
@@ -184,6 +200,8 @@
 				EEF648F518AFCAFE0009FD8F /* EFCMenuScene.m */,
 				EEF6491718AFD29D0009FD8F /* EFCCarScene.h */,
 				EEF6491818AFD29D0009FD8F /* EFCCarScene.m */,
+				EEA62A0B18B5159D00F474FC /* EFCParallaxScrollingScene.h */,
+				EEA62A0C18B5159D00F474FC /* EFCParallaxScrollingScene.m */,
 			);
 			name = Scene;
 			sourceTree = "<group>";
@@ -343,6 +361,8 @@
 				EEF648F618AFCAFE0009FD8F /* EFCMenuScene.m in Sources */,
 				EEF6492518B174B50009FD8F /* EFCVehicle.m in Sources */,
 				EEF648E918AFCAFE0009FD8F /* main.m in Sources */,
+				EEA62A0D18B5159D00F474FC /* EFCParallaxScrollingScene.m in Sources */,
+				EEA62A0A18B5157000F474FC /* PBParallaxScrolling.m in Sources */,
 				EEF648ED18AFCAFE0009FD8F /* EFCAppDelegate.m in Sources */,
 				EEF6491918AFD29D0009FD8F /* EFCCarScene.m in Sources */,
 				EEF6491D18AFD9590009FD8F /* SKSpriteButtonNode+Extra.m in Sources */,
